@@ -1,115 +1,59 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
+*{
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Header Styles */
-.header-background {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
+body {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: rgb(230, 255, 3);
+    padding: 20px;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.header-content {
-    margin-top: 20px;
-}
-
-.header-content img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-.header-content h1 {
-    margin: 10px 0 5px;
-}
-
-.header-content p {
-    font-size: 1.2em;
-}
-
-/* Main Content Styles */
-main {
-    margin: 20px;
+header h1 {
+    margin-bottom: 10px;
 }
 
 section {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
-section h2 {
-    color: #4CAF50;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.profile-photo {
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
-    display: block;
+.profile-image {
+    width: 150px;
+    height: auto;
     border-radius: 50%;
-    border: 5px solid #4CAF50;
+    border: 5px solid rgb(0, 0, 0);
 }
 
-/* Portfolio Section Styles */
-.project {
-    background-color: #f0f0f0;
+.skills, .projects, .Certificates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill, .project, .Certificate {
+    border: 1px solid #ccc;
     padding: 10px;
-    margin: 10px 0;
-    border: 2px solid #4CAF50;
-    border-radius: 5px;
-    text-align: center;
+    margin: 10px;
+    width: calc(30% - 20px);
 }
 
-/* Contact Section Styles */
-.btn {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1em;
+.project-image , .Certificate-image{
+    width: 300px;
+    align-items: end;
 }
 
-.btn:hover {
-    background-color: #45a049;
-}
-
-/* Footer Styles */
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
+    padding: 10px;
+    background: lightgray;
 }
 
+.socials a {
+    margin: 0 10px;
+}
