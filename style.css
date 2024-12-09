@@ -9,14 +9,29 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header {
+header{
     background: rgb(230, 255, 3);
     padding: 20px;
-    text-align: center;
+    text-align: center;    
 }
 
 header h1 {
     margin-bottom: 10px;
+}
+
+header-active{
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    z-index: 100;
 }
 
 section {
